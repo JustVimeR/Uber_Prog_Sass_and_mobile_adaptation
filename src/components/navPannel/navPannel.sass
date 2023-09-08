@@ -1,3 +1,5 @@
+@import "../sass/_media"
+
 $main-color: #1eacc7
 $second-color: #ff5656
 
@@ -18,6 +20,10 @@ nav
 	height: 50px
 	background-color: #212121
 	z-index: 2
+
+.hamburger
+	display: none
+
 .menu
 	display: flex
 	justify-content: space-between
@@ -31,6 +37,9 @@ nav
 	&_item
 		border-right: 2px dotted black
 		padding-right: 43px
+		&:last-child
+			border-right: none
+
 .subheader
 	position: absolute
 	width: 100%
@@ -77,6 +86,7 @@ nav
 		font-weight: 400
 		text-transform: uppercase
 		+btn_hover
+
 .promo
 	height: 800px
 	background: url('../../img/uber-bg.png') center center/cover no-repeat
@@ -122,3 +132,5 @@ nav
 		line-height: 63px
 		text-transform: uppercase
 		+btn_hover
+.xs-visible
+	display: none

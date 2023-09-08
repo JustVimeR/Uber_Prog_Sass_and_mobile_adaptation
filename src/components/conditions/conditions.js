@@ -3,7 +3,7 @@ import './conditions.sass';
 const Conditions = () => {
     return (
         <>
-            <section className="require">
+            <section className="require" id="require">
                 <div className="container">
                     <div className="label">Можливості</div>
                     <div className="title">умови та вимоги</div>
@@ -65,7 +65,7 @@ const Conditions = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section >
         </>
     );
 }
